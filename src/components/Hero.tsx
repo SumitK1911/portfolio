@@ -14,7 +14,7 @@ const Hero = () => {
   const socialRef = useRef<HTMLDivElement>(null);
 
   // This URL is correct and forces a download, provided sharing is public.
-  const CV_DOWNLOAD_URL = "https://drive.google.com/uc?export=download&id=1lUIETvOnxeeHfyVuB6gv5gcR1sWSn9Lz";
+  const CV_DOWNLOAD_URL = "https://drive.google.com/uc?export=download&id=1wGGb8g0181UMuLDiVxv0aQe24_C4nCfU";
 
   const handleDownload = () => {
     // 🛑 SOLUTION: We use window.open to force a navigation event, bypassing the CORS/Fetch block.
