@@ -22,7 +22,7 @@ const Projects = () => {
         { name: 'React Native', icon: SiReact, color: 'text-blue-500' },
         { name: 'MongoDB', icon: SiMongodb, color: 'text-green-500' },
       ],
-      liveUrl: 'https://mocktestprivatefrontend.onrender.com/',
+      liveUrl: 'https://app.sumitkharbuja.com.np/',
       githubUrl: 'https://github.com/SumitK1911/mocktestfrontend',
       featured: true,
       gradient: 'from-blue-500 to-purple-600'
