@@ -1,6 +1,6 @@
 import  { useEffect, useRef } from 'react';
 import { FaExternalLinkAlt, FaGithub, FaPlay } from 'react-icons/fa';
-import { SiNextdotjs, SiFastapi, SiReact, SiMongodb, SiPython } from 'react-icons/si';
+import { SiNextdotjs, SiFastapi, SiReact, SiMongodb, SiPython, SiPostgresql } from 'react-icons/si';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -21,6 +21,7 @@ const Projects = () => {
         { name: 'FastAPI', icon: SiFastapi, color: 'text-green-600' },
         { name: 'React Native', icon: SiReact, color: 'text-blue-500' },
         { name: 'MongoDB', icon: SiMongodb, color: 'text-green-500' },
+        { name: 'Supabase', icon: SiPostgresql, color: 'text-green-500' },
       ],
       liveUrl: 'https://app.sumitkharbuja.com.np/',
       githubUrl: 'https://github.com/SumitK1911/mocktestfrontend',
