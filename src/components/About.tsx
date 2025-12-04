@@ -13,8 +13,8 @@ const About = () => {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      // Title animation
-      gsap.fromTo(titleRef.current,
+      gsap.fromTo(
+        titleRef.current,
         { opacity: 0, y: 50 },
         {
           opacity: 1,
@@ -24,13 +24,13 @@ const About = () => {
             trigger: titleRef.current,
             start: "top 80%",
             end: "bottom 20%",
-            toggleActions: "play none none reverse"
-          }
+            toggleActions: "play none none reverse",
+          },
         }
       );
 
-      // Content animation
-      gsap.fromTo(contentRef.current?.children || [],
+      gsap.fromTo(
+        contentRef.current?.children || [],
         { opacity: 0, x: -50 },
         {
           opacity: 1,
@@ -41,13 +41,13 @@ const About = () => {
             trigger: contentRef.current,
             start: "top 80%",
             end: "bottom 20%",
-            toggleActions: "play none none reverse"
-          }
+            toggleActions: "play none none reverse",
+          },
         }
       );
 
-      // Cards animation
-      gsap.fromTo(cardsRef.current?.children || [],
+      gsap.fromTo(
+        cardsRef.current?.children || [],
         { opacity: 0, y: 50, scale: 0.9 },
         {
           opacity: 1,
@@ -59,8 +59,8 @@ const About = () => {
             trigger: cardsRef.current,
             start: "top 80%",
             end: "bottom 20%",
-            toggleActions: "play none none reverse"
-          }
+            toggleActions: "play none none reverse",
+          },
         }
       );
     }, sectionRef);
@@ -83,19 +83,21 @@ const About = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div ref={contentRef} className="space-y-8">
             <div className="space-y-6">
+
               <p className="text-lg text-slate-700 leading-relaxed">
-                Completed <span className="font-semibold text-indigo-600">BSc.CSIT at Kathmandu College of Technology</span>, 
-                I have hands-on experience as a Full Stack Developer intern at IT Hive Solution. I specialize in building scalable 
-                applications with modern technologies including Next.js, FastAPI, React Native, and AI/ML integration.
+                I’m a full stack developer experienced in creating scalable, secure, and high-performance 
+                web and mobile applications. With a 
+                <span className="font-semibold text-indigo-600"> BSc.CSIT degree from Kathmandu College of Technology</span>, 
+                I specialize in modern technologies like Next.js, FastAPI, React Native, and AI/ML integration.
               </p>
+
               <p className="text-lg text-slate-700 leading-relaxed">
-                My expertise spans from developing AI-powered applications with LLMs and vector databases 
-                to creating comprehensive full-stack solutions. I'm passionate about leveraging artificial 
-                intelligence to solve real-world problems and building user-focused, innovative applications.
+                My work spans AI-powered solutions with LLMs and vector databases, full-stack systems, and 
+                user-focused applications. I’m passionate about leveraging intelligent systems and building 
+                applications that are both technically robust and impactful.
               </p>
             </div>
 
-            {/* Education & Experience Timeline */}
             <div className="space-y-6">
               <div className="flex items-start space-x-4 p-4 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl">
                 <div className="p-2 bg-indigo-100 rounded-lg">
@@ -119,9 +121,18 @@ const About = () => {
                 </div>
               </div>
             </div>
-            
+
             <div className="flex flex-wrap gap-3">
-              {['Next.js', 'FastAPI', 'React Native', 'AI/ML', 'MongoDB', 'Vector DB', 'Python', 'Docker'].map((tech, index) => (
+              {[
+                "Next.js",
+                "FastAPI",
+                "React Native",
+                "AI/ML",
+                "MongoDB",
+                "Vector DB",
+                "Python",
+                "Docker",
+              ].map((tech, index) => (
                 <span
                   key={index}
                   className="px-4 py-2 bg-gradient-to-r from-indigo-100 to-purple-100 text-indigo-800 rounded-full text-sm font-medium hover:scale-105 transition-transform cursor-default"
